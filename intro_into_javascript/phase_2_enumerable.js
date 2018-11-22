@@ -39,5 +39,5 @@ let func = function (el1, el2) {
   return el1 * el2;
 };
 
-console.log(arr2.myReduce(func));
-console.log(arr2.myReduce(func, 20));
+// console.log(arr2.myReduce(func));
+// console.log(arr2.myReduce(func, 20));
