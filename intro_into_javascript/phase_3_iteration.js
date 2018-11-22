@@ -15,6 +15,20 @@ Array.prototype.bubbleSort = function () {
   return this;
 };
 
-let arr3 = [5,4,3,2,1];
+// let arr3 = [5,4,3,2,1];
 
-console.log(arr3.bubbleSort());
+// console.log(arr3.bubbleSort());
+
+String.prototype.substrings = function () {
+  let result = [];
+  for(let i = 0; i < this.length; i++) {
+    for(let j = i; j < this.length; j++) {
+      result.push(this.slice(i, j + 1));
+    }
+  }
+  return result;
+};
+
+// let str = "any";
+// 
+// console.log(str.substrings());
