@@ -27,7 +27,7 @@ function exp1(base, exp) {
   return base * exp1(base, exp - 1);
 }
 
-// console.log(exp1(4,2));
+// console.log(exp1(3,9));
 
 function exp2(base, exp) {
   if (exp === 0) {
@@ -40,9 +40,10 @@ function exp2(base, exp) {
   if (exp % 2 === 0) {
     return exp2(base, exp/2) * exp2(base, exp/2);
   } else {
-    return base * (exp2(base, (exp - 1)/2));
+    return base * (exp2(base, (exp - 1)/2) * (exp2(base, (exp - 1)/2)));
   }
 }
 
-console.log(exp2(4,2));
-console.log(exp2(5,2));
+// console.log(exp2(4,2));
+// console.log(exp2(3,9));
+
